@@ -44,6 +44,6 @@ curl -H "ClientID:eee" -H "X-User-Agent:Dalvik/2.1.0 (Linux; U; Android 5.0; TES
 ```
 
 With this extra data you can visualize the distribution of OS versions across unique clients with a pie chart.
-The below chart shows 2 users with Android 5.0 (ccc, ddd & eee), 2 with 4.4 (aaa & bbb) 1 with 5.1 (actual device)
+The below chart shows 3 users with Android 5.0 (ccc, ddd & eee), 2 with 4.4 (aaa & bbb) 1 with 5.1 (actual device). The data is counted uniquely by the `clientid` field and aggregated by the `xuseragent` field. This prevents duplicate app init calls from a singled device from influencing the figures i.e. only counted once
 
 ![Kibana Pie Chart](/kibana_pie_chart.png)
